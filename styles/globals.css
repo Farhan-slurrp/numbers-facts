@@ -1,9 +1,12 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&display=swap");
+
 html,
 body {
   padding: 0;
   margin: 0;
   font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen,
     Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
+  background-color: #445;
 }
 
 a {
@@ -13,4 +16,45 @@ a {
 
 * {
   box-sizing: border-box;
+}
+
+.search {
+  padding-top: 1em;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  gap: 1em;
+}
+
+.text-field {
+  width: 50%;
+  color: white;
+  background-color: transparent;
+  border: 1px solid #fff;
+  outline: none;
+  font-size: 1em;
+  font-family: "Montserrat", sans-serif;
+  font-weight: 500;
+  padding: 1em 1em;
+}
+.text-field:focus {
+  border: 1px solid greenyellow;
+}
+
+::placeholder {
+  color: rgba(238, 238, 238, 0.959);
+}
+
+/* Chrome, Safari, Edge, Opera */
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+/* Firefox */
+input[type="number"] {
+  -moz-appearance: textfield;
 }
